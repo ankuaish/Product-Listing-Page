@@ -86,3 +86,47 @@ a.action_container:link {
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
+.item-container {
+  width: 250px;
+  margin: 10px;
+}
+.item-image {
+  width: 100%;
+  background-color: #eaebf0;
+}
+.company-name {
+  margin-top: 15px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1;
+  color: #282c3f;
+  margin-bottom: 6px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.item-name {
+  color: #535766;
+  font-size: 14px;
+  line-height: 1;
+  margin-bottom: 0;
+  margin-top: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: 400;
+  display: block;
+}
+.price {
+  margin-top: 10px;
+  font-size: 14px;
+  line-height: 15px;
+  color: #282c3f;
+  white-space: nowrap;
+}
+.button-container {
+  margin-top: 35px;
+
+  display: flex;
+  justify-content: space-around;
+}

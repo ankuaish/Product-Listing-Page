@@ -1,19 +1,18 @@
-import { HomeItem } from "../components/HomeItem";
-import { useSelector } from "react-redux";
-
 export const Home = () => {
-  const items = useSelector((store) => store.items);
-
   return (
     <>
-      {" "}
-      <main>
-        <div className="items-container">
-          {items.map((item) => (
-            <HomeItem key={item.id} item={item} />
-          ))}
+      <div className="button-container">
+        <h6>Showing 20 of 50 Products </h6>
+        <div>
+          Sort by:{" "}
+          <select name="language" id="language">
+            <option value="">Most Popular</option>
+            <option value="">Trending</option>
+            <option value="">High Price</option>
+            <option value="">Low Price</option>
+          </select>
         </div>
-      </main>
+      </div>
     </>
   );
 };
