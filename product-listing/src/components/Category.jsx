@@ -12,13 +12,6 @@ export const Category = () => {
   };
   const getCategory = getUnique(products, "category");
 
-  // const [data, setData] = useState(products);
-  // const filterResult = (catItem) => {
-  //   const result = products.filter((curData) => {
-  //     return curData.category === catItem;
-  //   });
-  //   setData(result);
-  // };
   return (
     <>
       <div className="container mt-3">
@@ -34,7 +27,7 @@ export const Category = () => {
                   id="check1"
                   name="category"
                   value={curElem}
-                  // onClick={() => filterResult(curElem)}
+                  onClick={() => filterResult(curElem)}
                 />
                 <label className="form-check-label" htmlFor="check1">
                   {curElem}
