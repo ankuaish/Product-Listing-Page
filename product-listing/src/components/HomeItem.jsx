@@ -4,7 +4,7 @@ export const HomeItem = ({ item }) => {
       {" "}
       <div className="item-container">
         <img className="item-image" src={item.images} alt="item image" />
-
+        <div className="rating">{item.brand}</div>
         <div className="company-name">{item.category}</div>
         <div className="item-name">{item.title}</div>
         <div className="price">Rs {item.price}</div>
